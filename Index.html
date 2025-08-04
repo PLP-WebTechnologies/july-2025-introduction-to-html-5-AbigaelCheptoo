@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A sample web page demonstrating semantic HTML5 structure, accessibility practices, and SEO basics." />
+  <meta name="keywords" content="HTML5, accessibility, SEO, semantic web, beginner web development" />
+  <meta name="author" content="Your Name" />
+  <title>HTML5 Accessibility & SEO Basics</title>
+  <style>
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 8px;
+      background: #000;
+      color: #fff;
+      z-index: 100;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <h1>HTML5, Accessibility & SEO Basics</h1>
+    <p>Understanding structure, inclusion, and discoverability on the web</p>
+  </header>
+
+  <nav role="navigation" aria-label="Primary navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+    <ul>
+      <li><a href="#structure">HTML5 Structure</a></li>
+      <li><a href="#accessibility">Accessibility</a></li>
+      <li><a href="#seo">SEO</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+  </nav>
+
+  <main id="main" role="main">
+    <article id="structure">
+      <header>
+        <h2>Semantic HTML5 Structure</h2>
+        <p><time datetime="2025-07-29">July 29, 2025</time></p>
+      </header>
+      <section>
+        <h3>Why Use Semantic Tags?</h3>
+        <p>Semantic tags provide meaning to your content, helping browsers, screen readers, and search engines understand the layout and purpose of each section.</p>
+      </section>
+      <section>
+        <h3>Key HTML5 Elements</h3>
+        <ul>
+          <li><strong>&lt;header&gt;</strong>: Contains introductory content or navigation links.</li>
+          <li><strong>&lt;nav&gt;</strong>: Defines a set of navigation links.</li>
+          <li><strong>&lt;main&gt;</strong>: Represents the dominant content of the page.</li>
+          <li><strong>&lt;article&gt;</strong>: Encapsulates self-contained, reusable content.</li>
+          <li><strong>&lt;section&gt;</strong>: Groups related content.</li>
+          <li><strong>&lt;aside&gt;</strong>: Contains content indirectly related to the main content.</li>
+          <li><strong>&lt;footer&gt;</strong>: Defines the footer for a document or section.</li>
+        </ul>
+      </section>
+    </article>
+
+    <article id="accessibility">
+      <h2>Accessibility Best Practices</h2>
+      <section>
+        <h3>Making Web Content Inclusive</h3>
+        <p>Web accessibility ensures that all users, regardless of ability, can use your website effectively. Proper HTML structure helps screen readers parse content accurately.</p>
+      </section>
+      <section>
+        <h3>Tips for Accessible HTML</h3>
+        <ol>
+          <li>Use semantic elements for structure.</li>
+          <li>Provide descriptive <code>alt</code> text for images.</li>
+          <li>Ensure content is keyboard navigable.</li>
+          <li>Use landmarks like <code>role="navigation"</code> or <code>aria-label</code> to assist screen readers.</li>
+          <li>Maintain proper heading levels (e.g., h1 → h2 → h3).</li>
+        </ol>
+      </section>
+    </article>
+
+    <article id="seo">
+      <h2>Basic SEO Principles</h2>
+      <section>
+        <h3>Why SEO Matters</h3>
+        <p>SEO (Search Engine Optimization) helps your site appear higher in search engine results, bringing more visibility to your content.</p>
+      </section>
+      <section>
+        <h3>Beginner SEO Techniques</h3>
+        <ul>
+          <li>Use unique, descriptive title tags and meta descriptions.</li>
+          <li>Structure content with semantic HTML and clear headings.</li>
+          <li>Include keywords naturally in content and headings.</li>
+          <li>Use <code>alt</code> text for images to help with image search indexing.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <aside id="resources">
+    <h2>Helpful Resources</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN HTML Reference</a></li>
+      <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="_blank" rel="noopener noreferrer">WAI Accessibility Guidelines</a></li>
+      <li><a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google SEO Starter Guide</a></li>
+    </ul>
+  </aside>
+
+  <footer role="contentinfo">
+    <h2 class="visually-hidden">Site Footer</h2>
+    <p>&copy; 2025 HTML Learning Site. All rights reserved.</p>
+    
+  </footer>
+</body>
+</html>
